@@ -19,7 +19,7 @@
     }
     .nav-bar-wrap {
         height: @navbar-height;
-        line-height:  @navbar-height;
+        line-height: @navbar-height;
         width: 100%;
         .logo {
             .font-generic(@fs28, 'sans-regular', @navbar-font-color);
@@ -81,7 +81,7 @@
             @carousel-font-color);
         }
     }
-    .parallax-image{
+    .parallax-image {
         background-image: url('../common/images/portfolio/fullsize/3.jpg');
         height: 100vh;
         width: 100%;
@@ -89,11 +89,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        #image-content{
+        #image-content {
             position: absolute;
             left: 50%;
             top: 50%;
-            .translate(-50%, -50%);
+            .translate(-50%,
+            -50%);
             .font-generic(@fs48,
             'sans-regular',
             @carousel-font-color);
@@ -123,7 +124,7 @@
         .products-list-wrap {
             .display(flex);
             .flex-wrap(wrap);
-             -ms-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
         }
         .product {
             .flex(0 1 30%);
@@ -152,30 +153,36 @@
             }
         }
     }
-    .qulaity-wrap{
+    .qulaity-wrap {
         min-height: 100vh;
         height: 100%;
     }
-    .team-wrap{
+    .team-wrap {
         padding: @spacing50 0;
         min-height: 100vh;
         height: 100%;
-        #teamHeader{
-           .font-generic(@fs32,
-                'sans-bold',
-                @contactus-font-color);
-            text-align: center; 
+        #teamHeader {
+            .font-generic(@fs32,
+            'sans-bold',
+            @contactus-font-color);
+            text-align: center;
         }
-        .team-members{
+        .team-members {
             padding: @spacing50 0;
         }
-        .employee{
+        .employee {
             display: inline-block;
             width: 30%;
             margin: 0 1.5%;
             text-align: center;
+            &:hover .employee-image {
+                .scale(1.1);
+                -moz-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
         }
-        .employee-image{
+        .employee-image {
             border-radius: 50%;
             height: @employee-image-size;
             width: @employee-image-size;
@@ -183,32 +190,34 @@
             left: 50%;
             .translateX(-50%);
         }
-        .employee-name{
+        .employee-name {
             .font-generic(@fs24,
-                'sans-regular',
-                @contactus-font-color);
-                margin: @spacing20 0;
-                text-transform: uppercase;
+            'sans-regular',
+            @contactus-font-color);
+            margin: @spacing20 0;
+            text-transform: uppercase;
         }
-        .employee-description{
+        .employee-description {
             .font-generic(@fs18,
-                'sans-regular',
-                @theme-color);
-                text-transform: uppercase;
+            'sans-regular',
+            @theme-color);
+            text-transform: uppercase;
         }
-        #employee1Image{
+        #employee1Image {
             background: url('../common/images/team/tesla.jpeg');
         }
-        #employee2Image{
+        #employee2Image {
             background: url('../common/images/team/ada.jpg');
         }
-        #employee3Image{
+        #employee3Image {
             background: url('../common/images/team/rosalind.jpg');
         }
-        #employee1Image, #employee2Image, #employee3Image{
+        #employee1Image,
+        #employee2Image,
+        #employee3Image {
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center; 
+            background-position: center;
         }
     }
     .contact-form-wrap {
@@ -284,7 +293,7 @@
             border: 3px dashed @contactus-font-color;
         }
     }
-    .footer-wrap{
+    .footer-wrap {
         padding: @spacing25;
     }
 }
